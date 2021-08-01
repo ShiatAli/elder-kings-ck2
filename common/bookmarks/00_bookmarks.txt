@@ -798,3 +798,24 @@ bm_wintersreturn = {
 		id = 3714 # Queen Hestra Varo of Nibenay
 	}
 }
+bm_swallowtheworld = {
+	name = "BM_SWALLOWTHEWORLD"
+	desc = "BM_SWALLOWTHEWORLD_DESC"
+	date = 4451.8.14
+	custom_start = yes
+	
+	selectable_character = {
+		id =  220054 # Emperor Titus Mede
+		name = ERA_CHAR_NAME_220054
+		age = 70
+		title = e_tamriel
+		title_name = e_tamriel
+		}
+	selectable_character = {
+		id = 258002 # Jarl Ulfric Stormcloak
+		name = ERA_CHAR_NAME_258002
+		age= 40
+		title = k_eastmarch
+		title_name = k_eastmarch
+		}
+}
