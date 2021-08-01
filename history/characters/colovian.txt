@@ -5703,16 +5703,10 @@
 	dynasty = 10308
 	culture = colovian
 	religion = eight_divines
-	mother = 7102
 	add_trait = imperial
-	add_trait = warrior_4
-	add_trait = crusader_3
-	add_trait = ruthless
-	add_trait = zealous
-	add_trait = humble
-	add_trait = reckless
+	mother = 7102
 	
-	3690.1.1 = { birth = yes }
+	3688.1.1 = { birth = yes }
 	3745.1.1 = { death = yes }
 }
 7104 = {

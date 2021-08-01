@@ -1938,7 +1938,7 @@
 	culture="imperial"
 	add_trait = imperial
 	add_trait = painter
-	add_trait =agent_3
+	add_trait = agent_3
 	learning=5
 	stewardship=7
 	intrigue=6

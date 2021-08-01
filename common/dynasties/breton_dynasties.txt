@@ -2447,7 +2447,3 @@
 	name = "Davaux"
 	culture = breton
 }
-90474 = {
-	name = "Aelford"
-	culture = breton
-}

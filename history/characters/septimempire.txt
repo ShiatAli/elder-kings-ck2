@@ -1137,7 +1137,9 @@
 	name = "Jagar" #Jagar Tharn
 	dynasty = 90422 #Tharn
 	religion = "nine_divines"
-	culture = "imperial" 
+	culture = "imperial"
+	father = 258501
+	mother = 258502
 	add_trait = breton
 	
 	4158.1.27 = {
@@ -1218,3 +1220,5 @@
 		death = "4380.1.1"
 	}
 }
+220066 = {
+	name= "

@@ -783,18 +783,26 @@ bm_wintersreturn = {
 	desc = "BM_WINTERSRETURN_DESC"
 	date = 3732.12.1
 	
-	era = no
+}
+
+bm_swallowtheworld= {
+	name = "BM_SWALLOWTHEWORLD"
+	desc = "BM_SWALLOWTHEWORLD_DESC"
+	date = 4451.8.14
+	custom_start = yes
 	
 	selectable_character = {
-		id = 125400 # Empress Irmaku Parzak of Cyrodillic Empire
-	}
+		id =  220054 # Emperor Titus Mede
+		name = ERA_CHAR_NAME_220054
+		age = 70
+		title = e_tamriel
+		title_name = e_tamriel
+		}
 	selectable_character = {
-		id = 136511 # Queen Kyuha Tharn of Rimmen
-	}
-	selectable_character = {
-		id = 7103 # Queen Sura Riol of the Colovian Estates
-	}
-	selectable_character = {
-		id = 3714 # Queen Hestra Varo of Nibenay
-	}
+		id = 258002 # Jarl Ulfric Stormcloak
+		name = ERA_CHAR_NAME_258002
+		age= 40
+		title = k_eastmarch
+		title_name = k_eastmarch
+		}
 }

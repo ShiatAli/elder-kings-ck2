@@ -1,4 +1,4 @@
-#####EK religious traits#####
+#####EK religious traits - includes sympathy traits#####
 #Khajiiti religous traits by Saffron
 
 #Forsworn/Hagraven Cultists

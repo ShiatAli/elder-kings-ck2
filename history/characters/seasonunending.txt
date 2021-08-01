@@ -1,0 +1,349 @@
+#Season Unending: 258000-260000
+
+#Stormcloaks
+258000 = {
+	name= Line of Jorgen
+	dynasty = 70072
+	culture = nord
+	religion = eight_divines
+	add_trait = nord
+	father = 11519
+	3988.12.31 = { birth = yes }
+	4380.1.1 = { death = yes }
+	occluded = yes
+	}
+258001 = {
+	name = "Hoag"
+	dynasty = 70072
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	father = 258000
+	4379.1.1 = { birth=yes }
+	4433.3.21 = { death=yes}
+}
+258002 = {
+	name = "Ulfric"
+	dynasty = 70072
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	add_trait = thuum_2
+	add_trait = adventurer
+	add_trait = warrior_3
+	add_trait = veteran_leader_2
+	add_trait = warlord
+	add_trait = ambitious
+	add_trait = proud
+	add_trait = p_talos
+	add_trait = gregarious
+	add_trait = zealous
+	add_trait = just
+	father = 258001
+	4411.1.1 = { birth = yes }
+	4481.1.1 = { death = yes }
+258003 = {
+	name = "Line of ANCESTOR"
+	dynasty = 70262
+	culture = nord
+	religion = eight_divines
+	add_trait = nord
+	3988.12.31 = { birth = yes }
+	4400.1.2 = { death = yes }
+	occluded = yes
+	}
+258004 = {
+	name = "Laila"
+	female = yes
+	dynasty = 70262
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	add_trait = magistrate_2
+	add_trait = just
+	add_trait = trusting
+	add_trait = kind
+	add_trait = p_mara
+	father = 258003
+	4400.1.1 = { birth = yes }
+	4470.1.1 = { death = yes }
+}
+258005 = {
+	name = "Harrald"
+	dynasty = 70262
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	add_trait = warrior_3
+	add_trait = proud
+	add_trait = wroth
+	add_trait = zealous
+	add_trait = p_talos
+	add_trait = temperate
+	mother = 258004 
+	4430.1.1 = { birth = yes }
+	4490.1.1 = { death = yes }
+	}
+258006 = {
+	name = "Saerlund"
+	dynasty = 70262
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	add_trait = diplomat_3
+	add_trait = p_akatosh
+	add_trait = patient
+	add_trait = honest
+	add_trait = stubborn
+	mother = 258004
+	4432.1.1 = { birth = yes }
+	4490.1.1 = { death = yes }
+	}
+258007 = {
+	name = "Line of Ari"
+	dynasty = 70117
+	culture = nord
+	religion = eight_divines
+	add_trait = nord
+	mother = 9273
+	3988.12.31 = { birth = yes }
+	4400.1.2 = { death = yes }
+	occluded = yes
+}
+	
+258008 = {
+	name = "Maven"
+	female = yes
+	dynasty = 70117
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	add_trait = proud
+	add_trait = greedy
+	add_trait = cynical
+	add_trait = shrewd
+	add_trait = ambitious
+	add_trait = agent_4
+	add_trait = patient
+	add_trait = diligent
+	add_trait = ruthless
+	add_trait = schemer
+	father = 258007
+	4400.1.1 = { birth = yes }
+	4470.1.1 = { death = yes }
+	}
+258009 = {
+	name = "Hemming"
+	dynasty = 70117
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	add_trait = proud
+	add_trait = greedy
+	add_trait = cynical
+	add_trait = stubborn
+	add_trait = ambitious
+	add_trait = agent_2
+	add_trait = wroth
+	add_trait = diligent
+	mother=258008
+	4425.1.1 = { birth = yes }
+	4490.1.1 = { death = yes }
+}
+258010 = {
+	name = "Sibbi"
+	dynasty = 70117
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	add_trait = wroth
+	add_trait = greedy
+	add_trait = lustful
+	add_trait = groomed
+	add_trait = hedonist
+	add_trait = agent_2
+	add_trait = reckless
+	mother=258008
+	4426.5.13 = { birth = yes }
+	4495.1.1 = { death = yes }
+}
+258011 = {
+	name = "Ingun"
+	female = yes
+	dynasty = 70117
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	add_trait = proud
+	add_trait = mage_4
+	add_trait = temperate
+	add_trait = diligent
+	add_trait = alchemist
+	add_trait = quick
+	add_trait = absent_minded
+	mother = 258008
+	4430.1.1 = { birth = yes }
+	4499.1.1 = { death = yes }
+}
+258012 = {
+	name = "Line of LAST SNOW-SHOD"
+	dynasty = 70345
+	culture = nord
+	religion = eight_divines
+	add_trait = nord
+	3988.12.31 = { birth = yes }
+	4395.1.2 = { death = yes }
+	occluded = yes
+}
+258013 = {
+	name = "Vulwulf"
+	dynasty = 70345
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	add_trait = drunkard
+	add_trait = depressed
+	add_trait = magistrate_3
+	add_trait = shrewd
+	add_trait = diligent
+	add_trait = p_talos
+	add_trait = zealous
+	father = 258012
+	4395.1.1 = { birth = yes }
+	4416.4.1 = {
+		add_spouse = 258014 }
+	4480.1.1 = { death = yes }
+}
+258014 = {
+	name = "Nura"
+	female = yes
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	add_trait = p_talos
+	add_trait = mage_4
+	add_trait = zealous
+	add_trait = diligent
+	add_trait = patient
+	add_trait = theologian
+	4397.1.1 = { birth = yes }
+	4416.4.1 = {
+		add_spouse = 258013 }
+	4480.1.1 = { death = yes }
+}
+258015 = {
+	name = "Asgeir"
+	dynasty = 70345
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	add_trait = p_zenithar
+	add_trait = shrewd
+	add_trait = ambitious
+	add_trait = kind
+	add_trait = administrator
+	add_trait = charitable
+	father = 258013
+	mother = 258014
+	4422.1.1 = { birth = yes }
+	4495.1.1 = { death = yes }
+}
+258016 = {
+	name = "Lilija"
+	female=yes
+	dynasty = 70345
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	add_trait = p_talos
+	add_trait = brave
+	add_trait = adventurer
+	add_trait = zealous
+	add_trait = warrior_2
+	add_trait = wounded
+	father = 258013
+	mother = 258014
+	4426.1.1 = { birth = yes }
+	4451.8.13 = { death = {
+               death_reason = death_battle }
+	}
+}
+258017 = {
+	name = "Unmid"
+	dynasty = 70345
+	culture = nord
+	religion = nine_divines
+	add_trait = nord
+	add_trait = p_talos
+	add_trait = brave
+	add_trait = robust
+	add_trait = warrior_4
+	add_trait = reckless
+	add_trait = stubborn
+	add_trait = zealous
+	add_trait = wroth
+	add_trait = just
+	add_trait = kind
+	add_trait = trusting
+	father = 258013
+	mother = 258014
+	4429.1.1 = { birth = yes }
+	4450.1.1 = {
+		add_lover = 258018 }
+	4497.1.1 = { death = yes }
+}
+258018 = {
+	name = "Anuriel"
+	culture = bosmer
+	religion = nine_divines
+	add_trait = bosmer
+	add_trait = deceitful
+	add_trait = agent_3
+	add_trait = lustful
+	add_trait = diligent
+	add_trait = arbitrary
+	add_trait = administrator
+	add_trait = p_zenithar
+	add_trait = temperate
+	4430.1.1 = { birth = yes }
+	4450.1.1 = { 
+		add_lover = 258017 }
+	4600.1.1 = { death = yes }
+}
+#Cyrodiil
+258500 = {
+	name = "Line of Xanderius"
+	dynasty = 90422
+	culture = nibenean
+	religion = eight_divines
+	add_trait = imperial
+	add_trait = legit_bastard
+	father = 3614
+	3402.12.31 = { birth = yes }
+	4101.1.1 = { death = yes }
+	occluded = yes
+}
+258501 = {
+	name = "Erasmo"
+	dynasty = 90422
+	culture = bosmer
+	religion = nine_divines
+	add_trait = bosmer
+	father = 258500
+	4100.1.1 = { birth = yes }
+	4155.1.5 = {
+		add_spouse = 258502 }
+	4160.1.1 = {death = yes }
+	}
+258502 = {
+	name = "Joslin"
+	culture = breton
+	religion = nine_divines
+	add_trait = breton
+	4130.1.1 = { birth = yes }
+	4155.1.5 = {
+		add_spouse = 258501 }
+	4170.1.1 = { death = yes }
+}
+
+

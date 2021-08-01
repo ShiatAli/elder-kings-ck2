@@ -11,3 +11,4 @@
 3731.1.1 = { holder = 16572 } #Nathaniel Ice-Heart ( Doom-Sayer married )
 3782.1.1 = { holder = 10787 } 
 3809.1.1 = { holder = 10788 }
+4450.1.1 = { liege = k_eastmarch }
