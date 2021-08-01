@@ -1,8 +1,8 @@
 on_startup = { #does it fire the event 2 for ruler designer chars
     effect = {
         if = {
-            limit = { 
-                has_landed_title = e_cult_meridia 
+            limit = {
+                has_landed_title = e_cult_meridia
                 is_save_game = no
             }
 
@@ -12,14 +12,18 @@ on_startup = { #does it fire the event 2 for ruler designer chars
             export_to_variable = { which = global_third_era_year value = year }
             subtract_variable = { which = global_third_era_year which = global_third_era_start }
 
+            export_to_variable = { which = global_fourth_era_year value = year }
+            subtract_variable = { which = global_fourth_era_year which = global_fourth_era_start }
+
             set_variable = { which = global_start_year_2e which = global_second_era_year }
             set_variable = { which = global_start_year_3e which = global_third_era_year }
+            set_variable = { which = global_start_year_4e which = global_fourth_era_year }
 
             export_to_variable = { which = global_played_years value = total_years_played }
 
             trigger_switch = {
                 on_trigger = year
-                4259 = { set_variable = { which = global_current_era value = 4 } }
+                4250 = { set_variable = { which = global_current_era value = 4 } }
                 3816 = { set_variable = { which = global_current_era value = 3 } }
                 2920 = { set_variable = { which = global_current_era value = 2 } }
             }
@@ -72,10 +76,16 @@ on_startup = { #does it fire the event 2 for ruler designer chars
                 }
                 1 = { province_event = { id = ekera.2 days = 31 } }
             }
+			else_if = {
+                limit = { #bm_swallowtheworld
+                    start_date == 4451.8.14
+                }
+                1 = { province_event = { id = ekera.2 days = 139 } }
+            }
             else = {
                 set_global_flag = era_non_bm_start
                 trigger_switch = {
-            	    on_trigger = month
+                    on_trigger = month
 
                     11 = { 1 = { province_event = { id = ekera.2 days = 31 } } }
                     10 = { 1 = { province_event = { id = ekera.2 days = 61 } } }
@@ -98,12 +108,15 @@ on_startup = { #does it fire the event 2 for ruler designer chars
 on_decade_pulse = {
     effect = {
         if = {
-            limit = { has_landed_title = e_cult_meridia } 
+            limit = { has_landed_title = e_cult_meridia }
             export_to_variable = { which = global_second_era_year value = year }
             subtract_variable = { which = global_second_era_year value = 2920 }
 
             export_to_variable = { which = global_third_era_year value = year }
             subtract_variable = { which = global_third_era_year which = global_third_era_start }
+
+            export_to_variable = { which = global_fourth_era_year value = year }
+            subtract_variable = { which = global_fourth_era_year which = global_fourth_era_start }
 
             export_to_variable = { which = global_played_years value = total_years_played }
         }
@@ -118,46 +131,27 @@ on_offmap_monthly_pulse = {
                 month = 0
                 NOT = { month = 1 }
                 has_global_flag = era_non_bm_start
-            } 
+            }
             if = {
                 limit = { NOT = { has_global_flag = era_updated } }
 
-        	    change_variable = { which = global_second_era_year value = 1 }
-        	    change_variable = { which = global_third_era_year value = 1 }
+                change_variable = { which = global_second_era_year value = 1 }
+                change_variable = { which = global_third_era_year value = 1 }
+                change_variable = { which = global_fourth_era_year value = 1 }
 
-        	    change_variable = { which = global_played_years value = 1 }
+                change_variable = { which = global_played_years value = 1 }
 
-			    set_global_flag = era_updated
+                set_global_flag = era_updated
 
                 1 = { province_event = { id = ekera.2 days = 365 } } #province events so char death don't matter
             }
             else = {
                 clr_global_flag = era_updated
             }
-
-            # export_to_variable = { which = global_second_era_year value = year }
-            # subtract_variable = { which = global_second_era_year value = 2920 }
-
-            # export_to_variable = { which = global_third_era_year value = year }
-            # subtract_variable = { which = global_third_era_year which = global_third_era_start }
-
-            # export_to_variable = { which = global_played_years value = total_years_played }
+            
         }
     }
 }
-
-# on_yearly_pulse = {
-#     effect = {
-#         if = {
-#             limit = { is_multiplayer_host_character = yes } 
-
-#             change_variable = { which = global_second_era_year value = 1 }
-#             change_variable = { which = global_third_era_year value = 1 }
-
-#             change_variable = { which = global_played_years value = 1 }
-#         }
-#     }
-# }
 
 #hardcode bookmarks and events. keep redundancy for non bm starts. check with global flag
 #for non-bm get start  month days and use to drive events. can have it calibrate w/ offmap_pulse to see which fires first in january and ajust firing date accordingly

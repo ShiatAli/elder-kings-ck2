@@ -38,7 +38,7 @@ defined_text = {
 	
 	text = {
 		localisation_key = 4_ERA
-		trigger = { start_date = 4259.1.1 } 
+		trigger = { start_date = 4250.1.1 } 
 	}
 	text = {
 		localisation_key = 3_ERA
@@ -55,8 +55,8 @@ defined_text = {
 	use_first_valid = yes
 	
 	text = {
-		localisation_key = 4_ERA_YEAR
-		trigger = { start_date = 4259.1.1 } 
+		localisation_key = START_YEAR_4E
+		trigger = { start_date = 4250.1.1 } 
 	}
 	text = {
 		localisation_key = START_YEAR_3E
@@ -90,16 +90,16 @@ defined_text = {
 	name = GetDragonbornCanAppear
 	
 	text = {
-		localisation_key = "The Last Dragonborn has §Ralready appeared§!, but lesser Doom-Driven heroes can still rise..."
+		localisation_key = "The Last Dragonborn has ï¿½Ralready appearedï¿½!, but lesser Doom-Driven heroes can still rise..."
 		trigger = {
-			year = 4435
+			year = 4452
 		}
 	}
 	
 	text = {
-		localisation_key = "Dragonborns and other Doom-Driven heroes will §Yrarely§! appear"
+		localisation_key = "Dragonborns and other Doom-Driven heroes will ï¿½Yrarelyï¿½! appear"
 		trigger = {
-			NOT = { year = 4435 }	# Last Dragonborn
+			NOT = { year = 4452 }	# Last Dragonborn
 			NOR = {
 				has_global_flag = daedric_invasion_of_tamriel
 				has_global_flag = daedric_invasion_of_akavir
@@ -109,9 +109,9 @@ defined_text = {
 	}
 	
 	text = {
-		localisation_key = "Dragonborns and other Doom-Driven heroes will §Yoften§! appear to defeat the current crisis"
+		localisation_key = "Dragonborns and other Doom-Driven heroes will ï¿½Yoftenï¿½! appear to defeat the current crisis"
 		trigger = {
-			NOT = { year = 4435 }	# Last Dragonborn
+			NOT = { year = 4452 }	# Last Dragonborn
 			OR = {
 				has_global_flag = daedric_invasion_of_tamriel
 				has_global_flag = daedric_invasion_of_akavir
@@ -187,21 +187,21 @@ defined_text = {
 	}
 	
 	text = {
-		localisation_key = "A Daedric Prince is §Rcurrently invading§! Tamriel."
+		localisation_key = "A Daedric Prince is ï¿½Rcurrently invadingï¿½! Tamriel."
 		trigger = {
 			has_global_flag = daedric_invasion_of_tamriel
 		}
 	}
 	
 	text = {
-		localisation_key = "A Daedric Prince is §Rcurrently invading§! Akavir."
+		localisation_key = "A Daedric Prince is ï¿½Rcurrently invadingï¿½! Akavir."
 		trigger = {
 			has_global_flag = daedric_invasion_of_akavir
 		}
 	}
 	
 	text = {
-		localisation_key = "A Daedric Prince is §Rcurrently invading§! Atmora."
+		localisation_key = "A Daedric Prince is ï¿½Rcurrently invadingï¿½! Atmora."
 		trigger = {
 			has_global_flag = daedric_invasion_of_atmora
 		}
@@ -223,7 +223,7 @@ defined_text = {
 	}
 	
 	text = {
-		localisation_key = "The Dragonfires are burning. §GThe world is safe.§!"
+		localisation_key = "The Dragonfires are burning. ï¿½GThe world is safe.ï¿½!"
 		trigger = {
 			event_target:lit_dragonfires = {
 				is_alive = yes

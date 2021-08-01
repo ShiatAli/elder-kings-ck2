@@ -98,6 +98,13 @@
 	holder = 220042 #Uriel VII
 }
 
+4250.1.1={
+	effect = {
+		set_variable = { which = global_fourth_era_start value = 4259 } #maybe -1 to remove year zero? future me says no, 3E 0 is a thing
+		set_variable = { which = global_current_era value = 4 }
+	}
+}
+
 4250.2.10 = {
 	holder = 220049 #Martin I
 }
